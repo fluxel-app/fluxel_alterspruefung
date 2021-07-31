@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<jtlshopplugin>
+    <Name>Fluxel Altersprüfung</Name>
+    <Description>Plugin zur Abfrage des Alters und (zukünftig) die Prüfung von Ausweis-Prüfziffern oder manuelle Prüfung</Description>
+    <Author>Fluxel UG</Author>
+    <URL>https://www.fluxel.de</URL>
+    <XMLVersion>100</XMLVersion>
+    <ShopVersion>5.0.0</ShopVersion>
+    <PluginID>fluxel_alterspruefung</PluginID>
+    <Version>1.0.4</Version>
+    <CreateDate>2021-07-31</CreateDate>
+    <Install>
+        <Adminmenu>
+            <Settingslink sort="1">
+                <Name>Einstellungen</Name>
+
+                <Setting type="checkbox" initialValue="on" sort="1" conf="Y">
+                    <Name>Popup aktivieren</Name>
+                    <Description />
+                    <ValueName>fluxel_agecheck_active</ValueName>
+                </Setting>
+                <Setting type="zahl" initialValue="7" sort="2" conf="Y">
+                    <Name>Popup Cookie Lifetime</Name>
+                    <Description>In Tage</Description>
+                    <ValueName>fluxel_agecheck_cookie_lifetime</ValueName>
+                </Setting>
+            </Settingslink>
+        </Adminmenu>
+        <Locales>
+            <Variable>
+                <Name>fluxel_agecheck_modal_header</Name>
+                <Description>Kopfbereich des Popups</Description>
+                <VariableLocalized iso="GER">Inhalte für Volljährige</VariableLocalized>
+                <VariableLocalized iso="ENG">Content for adults</VariableLocalized>
+            </Variable>
+            <Variable>
+                <Name>fluxel_agecheck_modal_content</Name>
+                <Description>Inhalt des Popups</Description>
+                <VariableLocalized iso="GER">Der Inhalt dieses Onlineshops richtet sich an volljährige Personen.</VariableLocalized>
+                <VariableLocalized iso="ENG">The content of this online shop is aimed at people of legal age.</VariableLocalized>
+            </Variable>
+            <Variable>
+                <Name>fluxel_agecheck_modal_accept</Name>
+                <Description>Akzeptieren-Button des Popups</Description>
+                <VariableLocalized iso="GER">Ich bin 18+ Jahre alt</VariableLocalized>
+                <VariableLocalized iso="ENG">I'm 18+ years old</VariableLocalized>
+            </Variable>
+            <Variable>
+                <Name>fluxel_agecheck_modal_deny</Name>
+                <Description>Ablehnen-Button des Popups</Description>
+                <VariableLocalized iso="GER">Ich bin unter 18 Jahre alt</VariableLocalized>
+                <VariableLocalized iso="ENG">I'm under 18 years old</VariableLocalized>
+            </Variable>
+            <Variable>
+                <Name>fluxel_agecheck_modal_deny_redirect</Name>
+                <Description>Link, wenn das Popup abgelehnt wird</Description>
+                <VariableLocalized iso="GER">https://www.kika.de/</VariableLocalized>
+                <VariableLocalized iso="ENG">https://www.kika.de/</VariableLocalized>
+            </Variable>
+        </Locales>
+    </Install>
+</jtlshopplugin>
