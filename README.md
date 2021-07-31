@@ -2,6 +2,8 @@
 
 [Download](https://github.com/fluxel-app/fluxel_alterspruefung/releases/download/v1.0.4/fluxel_alterspruefung.zip)
 
+[Blogeintrag und Infos](https://www.fluxel.de/2021/07/29/fluxel-open-source-jtl-shop-plugins/)
+
 Kompatibilität: JTL-Shop 5 oder höher
 
 Diese Plugin zeigt ein Popup bei dem Besuch des Shops an und fragt den Nutzer nach seiner Volljährigkeit.
